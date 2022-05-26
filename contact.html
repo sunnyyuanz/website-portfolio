@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/favicon-16x16.png">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Koulen&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.production.css">
+    <title>HTML and the Web</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div><img src="image/logo.PNG" alt="logo"></div>
+            <ul role="menubar">
+                <li role="presentation"><a href="index.html" role="menuitem" class="menuitem">Home</a></li>
+                <li role="presentation"><a href="about.html" role="menuitem" class="menuitem">AboutMe</a></li>
+                <li role="presentation"><a href="contact.html" role="menuitem" class="menuitem">Contact</a></li>
+                <li role="presentation"><a href="work.html" role="menuitem" class="menuitem">Work</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form">
+            <form id="contact" action="" method="post">
+                <h1>Contact Me Today</h1>
+                <div><label for="name">Name</label></div>
+                <input placeholder="Your name" id="name" type="text" tabindex="1" required>
+                <div><label for="email">Email</label></div>
+                <input placeholder="Your Email Address" id="email" type="email" tabindex="2" required>
+                <div><label for="phone">Phone Number</label></div>
+                <input placeholder="Your Phone Number" id="phone" type="tel" tabindex="3">
+                <div><label for="message">Message</label></div>
+                <input placeholder="Type your Message Here..." id="message" tabindex="4">
+                <div>
+                    <button type="submit" data-submit="sending">Submit</button>
+                </div>
+            </form>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="myinfo"><a href="mailto:sunnyyuanz616@gmail.com">By Email</a> - sunnyyuanz616@gmail</div>
+        <div class="myinfo"><a href="tel:+13476470394">By Phone</a> - +13476470394</div>
+        <div class="myinfo"><a href="https://github.com/sunnyyuanz">Check Out My Code On Github</a></div>
+        <div>Or</div>
+        <div>Find me on</div>
+        <div>
+            <a href="https://github.com/sunnyyuanz"><img src="image/github-icon.svg" alt="github"></a>
+            <a href="https://www.instagram.com/helenq80/?hl=en"><img src="image/instagram-icon.svg"
+                    alt="instagram-icon"></a>
+            <a href=""><img src="image/twitter-icon.svg" alt="twitter-icon"></a>
+
+        </div>
+    </footer>
+
+    <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
