@@ -1,43 +1,27 @@
-/*
-Colors used
-
-Text Color (white): #ffffff;
-Primary Color (black): #000000;
-Secondary Color (yellow): #F4F04A;
-
-Font 
-
-header font sizes:20pt
-font sizes: 16pt
-font color: #000000
- */
-
- :root{
-     --primary-color:#fceb03;
-     --secondary-color:#000000;
-     --opacity-black:rgba(0, 0, 0, 0.2);
-     --link-visted-fontcolor:#05676e;
-     --link-actived-fontcolor:#489c79;
-     --button-fontcolor:white;
-     --grid-item-color:rgba(252, 235, 3, 0.4);
-     --sun-color:#FFC727;
-     --sun-color-change:#f76414;
-     --cloud-color:#ebebeb;
-     --cloud-color-change:#f78914;
-     --window-light-on:#f7d24a;
-     --window-light-off:#263238;
-     --primary-display:flex;
-     --primary-flex-direction:column;
-     --primary-size:20px;
-     --primary-font:'PT Sans Narrow', sans-serif;
-     --max-width:100%;
-     --primary-margin:auto;
-     --primary-align:center;
-     --secondary-size:17px;
-     --secondary-display:inline-block;
-
- }
-
+:root {
+    --primary-color: #fceb03;
+    --secondary-color: #000;
+    --opacity-black: rgba(0, 0, 0, 0.2);
+    --link-visted-fontcolor: #05676e;
+    --link-actived-fontcolor: #489c79;
+    --button-fontcolor: white;
+    --grid-item-color: rgba(252, 235, 3, 0.4);
+    --sun-color: #ffc727;
+    --sun-color-change: #f76414;
+    --cloud-color: #ebebeb;
+    --cloud-color-change: #f78914;
+    --window-light-on: #f7d24a;
+    --window-light-off: #263238;
+    --primary-display: flex;
+    --primary-flex-direction: column;
+    --primary-size: 20px;
+    --primary-font: 'PT Sans Narrow', sans-serif;
+    --max-width: 100%;
+    --primary-margin: auto;
+    --primary-align: center;
+    --secondary-size: 17px;
+    --secondary-display: inline-block;
+}
 
 * {
     box-sizing: border-box;
@@ -81,7 +65,6 @@ article ul {
     font-size: var(--primary-size);
     margin-bottom: var(--primary-size);
     padding: 0;
-
 }
 
 article ul,
@@ -127,7 +110,6 @@ footer {
 footer div {
     line-height: 1.5em;
 }
-
 
 h1 {
     font-size: 60px;
@@ -189,8 +171,6 @@ a {
     text-decoration: underline;
     color: var(--secondary-color);
     font-family: var(--primary-font);
-
-
 }
 
 .code:visited,
@@ -260,51 +240,54 @@ button:hover {
 
 @media all and (max-width: 500px) {
     .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(6,1fr);
-      grid-gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 10px;
     }
+
     .grid__item:last-child {
-      grid-column: auto / auto;
-      grid-row: auto / auto;
+        grid-column: auto / auto;
+        grid-row: auto / auto;
     }
+
     h1 {
-      font-size: 40px;
+        font-size: 40px;
     }
-    h2{
+
+    h2 {
         font-size: 30px;
     }
+
     .grid_msg {
         font-size: var(--secondary-size);
         line-height: 1.5em;
     }
-  }
+}
 
 @media all and (min-width: 501px) {
     .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-gap: 2em
+        grid-gap: 2em;
     }
+
     .grid__item:last-child {
-        grid-column-start: 3;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 3;
+        grid-column: 3 3;
+        grid-row: 1 3;
     }
+
     .grid_msg {
         font-size: var(--secondary-size);
         line-height: 2em;
     }
-  }
-
+}
 
 .grid__item {
     background-color: var(--grid-item-color);
     border-radius: var(--primary-size);
-    box-shadow: 2px 11px 26px var(--opacity-black)  ; 
+    box-shadow: 2px 11px 26px var(--opacity-black);
 }
 
 .grid__item * {
@@ -315,28 +298,24 @@ button:hover {
     margin-left: 0;
 }
 
-.download{
+.download {
     border: none;
-  display: var(--secondary-display);
-  /* takes the font from the outer container */
-  font-family: var(--primary-font);
-  /* style button */
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 10px;
-  /* width of the border, type, color */
-  border-bottom: 2px solid var(--opacity-black);
-  transition: 0.2s opacity;
+    display: var(--secondary-display);/* takes the font from the outer container */
+    font-family: var(--primary-font);/* style button */
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;/* width of the border, type, color */
+    border-bottom: 2px solid var(--opacity-black);
+    transition: 0.2s opacity;
 }
 
 .download:hover,
 .download:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
-  cursor: pointer;
-  /* reduces the opacity of the button to 80% */
-  opacity: 0.8;
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;/* reduces the opacity of the button to 80% */
+    opacity: 0.8;
 }
 
 .nyc {
@@ -352,96 +331,100 @@ button:hover {
     from {
         fill: var(--sun-color);
     }
+
     to {
         fill: var(--sun-color-change);
     }
-
 }
+
 @keyframes cloud-color-change {
     0% {
         fill: var(--cloud-color);
     }
+
     50% {
         fill: var(--cloud-color-change);
     }
-    100%{
-        fill:transparent
-    }
 
+    100% {
+        fill: transparent;
+    }
 }
 
 @keyframes window-color-change {
     from {
         fill: var(--window-light-on);
     }
+
     to {
         fill: var(--window-light-off);
     }
-
 }
 
 @keyframes dark-window-color-change {
     from {
         fill: var(--window-light-off);
     }
+
     to {
         fill: var(--window-light-on);
     }
-
 }
 
 @keyframes cloud-move {
     from {
-      transform: translate(0, 50px);
+        transform: translate(0, 50px);
     }
-    to {
-      transform: translate(200px, 50px);
-    }
-  }
 
-  @keyframes bird-move {
-    from {
-      transform: translate(0, 50px);
-    }
     to {
-      transform: translate(200px, -200px);
+        transform: translate(200px, 50px);
     }
-  }
-
-  @keyframes bird-big {
-    from {
-      transform:scale(0,0) ;
-    }
-    to {
-      transform: scale(2,2);
-    }
-  }
-
-.window{
-    animation:window-color-change 1s linear infinite alternate;
 }
 
-.dark-window{
-    animation:dark-window-color-change 1s linear infinite alternate;
+@keyframes bird-move {
+    from {
+        transform: translate(0, 50px);
+    }
+
+    to {
+        transform: translate(200px, -200px);
+    }
 }
 
-.cloud-move{
+@keyframes bird-big {
+    from {
+        transform: scale(0, 0);
+    }
+
+    to {
+        transform: scale(2, 2);
+    }
+}
+
+.window {
+    animation: window-color-change 1s linear infinite alternate;
+}
+
+.dark-window {
+    animation: dark-window-color-change 1s linear infinite alternate;
+}
+
+.cloud-move {
     animation: 30s cloud-move infinite alternate linear;
 }
-.cloud{
-    animation:cloud-color-change 30s linear -2s infinite alternate;
 
-}
-.sun{
-    animation:color-change 4s linear -2s infinite alternate;
+.cloud {
+    animation: cloud-color-change 30s linear -2s infinite alternate;
 }
 
-.bird{
+.sun {
+    animation: color-change 4s linear -2s infinite alternate;
+}
+
+.bird {
     animation: 30s bird-move infinite alternate ease-in-out;
 }
 
-.bird-big{
+.bird-big {
     animation: 30s bird-big infinite alternate ease;
 }
-
-
