@@ -17,19 +17,26 @@
 <body>
     <header>
         <nav>
-            <div><img src="image/logo.PNG" alt="logo"></div>
-            <ul role="menubar">
+            <a href="index.html"><img src="image/logo.PNG" alt="logo" class="logo"></a>
+            <div class="menu-section">
+            <button role="menubar-mobile" class="menubar-mobile">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+            </button>
+            <ul role="menubar" class="menubar">
                 <li role="presentation"><a href="index.html" role="menuitem" class="menuitem">Home</a></li>
                 <li role="presentation"><a href="about-SunnyZ.html" role="menuitem" class="menuitem">AboutMe</a></li>
                 <li role="presentation"><a href="contact-SunnyZ.html" role="menuitem" class="menuitem">Contact</a></li>
                 <li role="presentation"><a href="work.html" role="menuitem" class="menuitem">Work</a></li>
             </ul>
+        </div>
         </nav>
     </header>
     <main>
         <div class="form">
             <form id="contact" action="" method="post">
-                <h1>Contact Me Today</h1>
+                <h1>Cont<span class="me">ac</span>tM<span class="me">e</span> T<span class="me">o</span>d<span class="me">ay</span></h1>
                 <div><label for="name">Name</label></div>
                 <input placeholder="Your name" id="name" type="text" tabindex="1" required>
                 <div><label for="email">Email</label></div>
@@ -37,7 +44,7 @@
                 <div><label for="phone">Phone Number</label></div>
                 <input placeholder="Your Phone Number" id="phone" type="tel" tabindex="3">
                 <div><label for="message">Message</label></div>
-                <input placeholder="Type your Message Here..." id="message" tabindex="4">
+                <textarea placeholder="Type your Message Here..." name="message" id="message" cols="30" rows="10" tabindex="4"></textarea>
                 <div>
                     <button type="submit" data-submit="sending">Submit</button>
                 </div>
@@ -60,6 +67,7 @@
         </div>
     </footer>
 
+    <script src="js/site.js"></script>
     <script src="js/tota11y.min.js"></script>
 </body>
 

@@ -20,16 +20,23 @@
 <body>
     <header>
         <nav>
-            <div><img src="image/logo.PNG" alt="logo" class="logo"></div>
-            <ul role="menubar">
+            <a href="index.html"><img src="image/logo.PNG" alt="logo" class="logo"></a>
+            <div class="menu-section">
+            <button role="menubar-mobile" class="menubar-mobile">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+            </button>
+            <ul role="menubar" class="menubar">
                 <li role="presentation"><a href="index.html" role="menuitem" class="menuitem">Home</a></li>
                 <li role="presentation"><a href="about-SunnyZ.html" role="menuitem" class="menuitem">AboutMe</a></li>
                 <li role="presentation"><a href="contact-SunnyZ.html" role="menuitem" class="menuitem">Contact</a></li>
                 <li role="presentation"><a href="work.html" role="menuitem" class="menuitem">Work</a></li>
             </ul>
+        </div>
         </nav>
     </header>
-    <main class="border">
+    <main>
         <section class="welcome">
             <img src="image/profile-image.jpg" alt="photo-of-SunnyZ" class="selfie">
             <div class="welcomemsg">
@@ -49,7 +56,7 @@
 
         </div>
     </footer>
-
+    <script src="js/site.js"></script>
     <script src="js/tota11y.min.js"></script>
 </body>
 
