@@ -103,17 +103,17 @@ footer {
 }
 
 p {
-    color: #000000;
+    color: #000;
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
 h1 {
-    color: #000000;
+    color: #000;
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
 nav ul li a {
-    color: #000000;
+    color: #000;
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
@@ -223,7 +223,7 @@ nav ul {
 
 a {
     text-decoration: underline;
-    color: #000000;
+    color: #000;
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
