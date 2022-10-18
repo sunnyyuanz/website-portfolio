@@ -130,17 +130,15 @@ h1 {
     color: #000;
     font-family: 'PT Sans Narrow', sans-serif;
 }
-
-nav ul li a {
-    color: #000;
-    font-family: 'PT Sans Narrow', sans-serif;
-}
-
 nav ul li a {
     font-size: 20px;
     text-decoration: none;
     font-weight: 400;
-    line-height: 30px;
+    color: #000;
+    font-family: 'PT Sans Narrow', sans-serif;
+    display: block;
+    width: 150%;
+    text-align: center;
 }
 
 header {
@@ -488,10 +486,9 @@ form h1 {
         z-index: 2;
         background-color: #fceb03;
         border-radius: 20px;
-        width: 170%;
-        text-align: center;
-        line-height: 40px;
+        
         cursor: pointer;
+        line-height: 40px;
     }
     li {
         margin: 20px;
