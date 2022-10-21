@@ -35,18 +35,20 @@
     </header>
     <main>
         <div class="form">
-            <form id="contact" action="" method="post">
+            <form id="contact">
                 <h1>Cont<span class="me">ac</span>tM<span class="me">e</span> T<span class="me">o</span>d<span class="me">ay</span></h1>
                 <div><label for="name">Name</label></div>
                 <input placeholder="Your name" id="name" type="text" tabindex="1" required>
+                <p id="nameErr"></p>
                 <div><label for="email">Email</label></div>
-                <input placeholder="Your Email Address" id="email" type="email" tabindex="2" required>
+                <input placeholder="Your Email Address" id="email" type="email" tabindex="2">
+                <p id="emailErr"></p>
                 <div><label for="phone">Phone Number</label></div>
                 <input placeholder="Your Phone Number" id="phone" type="tel" tabindex="3">
                 <div><label for="message">Message</label></div>
                 <textarea placeholder="Type your Message Here..." name="message" id="message" cols="30" rows="10" tabindex="4"></textarea>
                 <div>
-                    <button type="submit" data-submit="sending">Submit</button>
+                    <button type="submit">Submit</button>
                 </div>
             </form>
         </div>
@@ -66,7 +68,6 @@
 
         </div>
     </footer>
-
     <script src="js/site.js"></script>
     <script src="js/tota11y.min.js"></script>
 </body>
