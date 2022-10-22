@@ -5,28 +5,6 @@ menuClick.addEventListener('click', function () {
   menubar.classList.toggle('clicked');
 });
 
-// function validation() {
-//   let isReq = true;
-//   if (!email.includes('.') || !email.includes('@')) {
-//     emailErr.innerHTML = 'Please give me a valid email';
-//     isReq = false;
-//   }
-
-//   return isReq;
-// }
-
-// function submitForm(e) {
-//   e.preventDefault();
-//   const isReq = validation();
-//   console.log(isReq);
-
-//   if (isReq) {
-//     alert('Submitted! Will be in touch with you soon!');
-//     console.log('form is submitted!');
-//   }
-//   console.log('submit is clicked');
-// }
-
 const form = document.getElementById('contact');
 
 form.addEventListener('submit', (e) => {
