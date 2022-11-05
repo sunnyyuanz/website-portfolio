@@ -1,112 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="image/favicon-16x16.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Koulen&family=PT+Sans+Narrow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.production.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <title>HTML and the Web</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="image/favicon-16x16.png">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Koulen&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.production.css">
-        <title>HTML and the Web</title>
-    </head>
-
-<body>
+  <body>
     <header>
-        <nav>
-            <a href="index.html"><img src="image/logo.PNG" alt="logo" class="logo"></a>
-            <div class="menu-section">
-            <button role="menubar-mobile" class="menubar-mobile">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-            </button>
-            <ul role="menubar" class="menubar">
-                <li role="presentation"><a href="index.html" role="menuitem" class="menuitem">Home</a></li>
-                <li role="presentation"><a href="about-SunnyZ.html" role="menuitem" class="menuitem">AboutMe</a></li>
-                <li role="presentation"><a href="contact-SunnyZ.html" role="menuitem" class="menuitem">Contact</a></li>
-                <li role="presentation"><a href="work.html" role="menuitem" class="menuitem">Work</a></li>
-            </ul>
+      <nav>
+        <a href="index.html"
+          ><img src="image/logo.PNG" alt="logo" class="logo"
+        /></a>
+        <div class="menu-section">
+          <button role="menubar-mobile" class="menubar-mobile">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </button>
+          <ul role="menubar" class="menubar">
+            <li role="presentation">
+              <a href="index.html" role="menuitem" class="menuitem">Home</a>
+            </li>
+            <li role="presentation">
+              <a href="about-SunnyZ.html" role="menuitem" class="menuitem"
+                >AboutMe</a
+              >
+            </li>
+            <li role="presentation">
+              <a href="contact-SunnyZ.html" role="menuitem" class="menuitem"
+                >Contact</a
+              >
+            </li>
+            <li role="presentation">
+              <a href="work.html" role="menuitem" class="menuitem">Work</a>
+            </li>
+          </ul>
         </div>
-        </nav>
+      </nav>
     </header>
     <main>
-        <section class="work">
-            <h1>Work</h1>
-            <div class="grid">
-                <div class="grid__item">
-                    <h2 class="grid_header">MyFlix</h2>
-                    <img src="screenshot/desktop-view.PNG" alt="MyFlix Desktop-View" class="work-desktopImg"/>
-                        <img src="screenshot/Mobile-view.PNG" alt="MyFlix Mobile-View" class="work-mobileImg"/>
-                    <p class="grid_msg">
-                        This is a single-page application(SPA). It provides users with access to information about different movies, directors, and genres. Users are able to sign up update their person information, and create a list of their favorite movies. Development techniques include RESTAPI, Nodejs, Express, React, Reduxjs, MongoDB.
-                    </p>
-                    <div class="work-links"><a target="_blank" href="https://github.com/sunnyyuanz/myFlix-client/">See project on GitHub(Client-Side)</a><a target="_blank" href="https://github.com/sunnyyuanz/movie_api">See project on GitHub(Server-Side)</a><a target="_blank" href="https://thebestmyflix.netlify.app/">Live site</a></div>
-                 </div>
-                 <div class="grid__item">
-                    <h2 class="grid_header">Foodie-App</h2>
-                    <img src="screenshot/Largescreen.PNG" alt="FoodieApp Lg-View" class="work-desktopImg"/>
-                    <img src="screenshot/smallscreen.PNG" alt="FoodieApp Sm-View" class="work-mobileImg"/>
-                    <p class="grid_msg">
-                        A small web application built with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of data points in detail. This app aims to help people decide what they can eat in a day. Accomplished by FetchAPI, Bootstrap, Polyfills. Also focused on accessibility to make sure all contents are accessible for screen readers.
-                    </p>
-                    <div class="work-links"><a target="_blank" href="https://github.com/sunnyyuanz/what-to-eat-today-App">See project on GitHub</a><a target="_blank" href="https://sunnyyuanz.github.io/what-to-eat-today-App/">Live site</a></div>
-                 </div>
-                 <div class="grid__item">
-                    <h2 class="grid_header">Meet App</h2>
-                    <img src="screenshot/Desktop_screenshot.PNG" alt="meet-app Lg-View" class="work-desktopImg"/>
-                    <img src="screenshot/Mobile_screenshot.PNG" alt="meet-app Sm-View" class="work-mobileImg"/>
-                    <p class="grid_msg">
-                        A serverless, progressive web application(PWA) with React using a test-driven development(TDD) technique. The application uses the Google Calendar API to fetch upcoming events. Tools used included Jest, Cucumber, Pupeteer, AWS Lambda, Jenkin etc.
-                    </p>
-                    <div class="work-links"><a target="_blank" href="https://github.com/sunnyyuanz/meet-app/">See project on GitHub</a><a target="_blank" href="https://sunnyyuanz.github.io/meet-app/">Live Site</a></div>
-                 </div> 
-                 <div class="grid__item">
-                    <h2 class="grid_header">Sunnyside-agency-landing-page-main</h2>
-                    <img src="screenshot/desktop-preview.jpg" alt="Sunnyside Lg-View" class="work-desktopImg"/>
-                    <img src="screenshot/mobile-menu.jpg" alt="Sunnyside Sm-View" class="work-mobileImg"/>
-                    <p class="grid_msg">
-                        This well-designed landing page is most created with HTML and CSS-grid. In addition, you will see a few interesting hovering effect. 
-                    </p>
-                    <div class="work-links"><a target="_blank" href="https://github.com/sunnyyuanz/sunnyside-agency-landing-page-main">See project on GitHub</a><a target="_blank" href="https://sunnyyuanz.github.io/sunnyside-agency-landing-page-main/">Live Site</a></div>
-                 </div>
-             
-                 <div class="grid__item">
-                    <h2 class="grid_header">FAQ-Accordian_Card</h2>
-                    <img src="screenshot/DesktopCapture.PNG" alt="FAQ-Accordian_Card Lg-View" class="work-desktopImg"/>
-                    <img src="screenshot/MobileCapture.PNG" alt="FAQ-Accordian_Card Sm-View" class="work-mobileImg"/>
-                    <p class="grid_msg">
-                        Within this project, I created FAQ-Accordian_Card component with a gradiant background and shadow. 
-                        After building the templates with HTML,CSS,CSS-Flexbox and CSS-Grid. Also added the click features with JavaScript.
-                    </p>
-                    <div class="work-links"><a target="_blank" href="https://github.com/sunnyyuanz/FAQ-Accordian_Card">See project on GitHub</a><a target="_blank" href="https://sunnyyuanz.github.io/FAQ-Accordian_Card/">Live Site</a></div>
-                 </div>
-                 <div class="grid__item">
-                    <h2 class="grid_header">Blackjack Game</h2>
-                    <p class="grid_msg">
-                        Within this project, I created a Blackjack game. And it was created with just HTML,CSS and vanilla JavaScript.
-                    </p>
-                    <div><a target="_blank" href="https://github.com/sunnyyuanz/Blackjack-js">See project on GitHub</a></div>
-                 </div>
+      <section class="work">
+        <h1>Work</h1>
+        <div class="swiper grid">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide grid__item">
+              <h2 class="grid_header">MyFlix</h2>
+              <img
+                src="screenshot/desktop-view.PNG"
+                alt="MyFlix Desktop-View"
+                class="work-desktopImg"
+              />
+              <img
+                src="screenshot/Mobile-view.PNG"
+                alt="MyFlix Mobile-View"
+                class="work-mobileImg"
+              />
+              <p class="grid_msg">
+                This is a single-page application(SPA). It provides users with
+                access to information about different movies, directors, and
+                genres. Users are able to sign up update their person
+                information, and create a list of their favorite movies.
+                Development techniques include RESTAPI, Nodejs, Express, React,
+                Reduxjs, MongoDB.
+              </p>
+              <div class="work-links">
+                <a
+                  target="_blank"
+                  href="https://github.com/sunnyyuanz/myFlix-client/"
+                  >See project on GitHub(Client-Side)</a
+                ><a
+                  target="_blank"
+                  href="https://github.com/sunnyyuanz/movie_api"
+                  >See project on GitHub(Server-Side)</a
+                ><a target="_blank" href="https://thebestmyflix.netlify.app/"
+                  >Live site</a
+                >
+              </div>
             </div>
-         </section>
+            <div class="swiper-slide grid__item">
+              <h2 class="grid_header">Foodie-App</h2>
+              <img
+                src="screenshot/Largescreen.PNG"
+                alt="FoodieApp Lg-View"
+                class="work-desktopImg"
+              />
+              <img
+                src="screenshot/smallscreen.PNG"
+                alt="FoodieApp Sm-View"
+                class="work-mobileImg"
+              />
+              <p class="grid_msg">
+                A small web application built with HTML, CSS, and JavaScript
+                that loads data from an external API and enables the viewing of
+                data points in detail. This app aims to help people decide what
+                they can eat in a day. Accomplished by FetchAPI, Bootstrap,
+                Polyfills. Also focused on accessibility to make sure all
+                contents are accessible for screen readers.
+              </p>
+              <div class="work-links">
+                <a
+                  target="_blank"
+                  href="https://github.com/sunnyyuanz/what-to-eat-today-App"
+                  >See project on GitHub</a
+                ><a
+                  target="_blank"
+                  href="https://sunnyyuanz.github.io/what-to-eat-today-App/"
+                  >Live site</a
+                >
+              </div>
+            </div>
+            <div class="swiper-slide grid__item">
+              <h2 class="grid_header">Meet App</h2>
+              <img
+                src="screenshot/Desktop_screenshot.PNG"
+                alt="meet-app Lg-View"
+                class="work-desktopImg"
+              />
+              <img
+                src="screenshot/Mobile_screenshot.PNG"
+                alt="meet-app Sm-View"
+                class="work-mobileImg"
+              />
+              <p class="grid_msg">
+                A serverless, progressive web application(PWA) with React using
+                a test-driven development(TDD) technique. The application uses
+                the Google Calendar API to fetch upcoming events. Tools used
+                included Jest, Cucumber, Pupeteer, AWS Lambda, Jenkin etc.
+              </p>
+              <div class="work-links">
+                <a
+                  target="_blank"
+                  href="https://github.com/sunnyyuanz/meet-app/"
+                  >See project on GitHub</a
+                ><a
+                  target="_blank"
+                  href="https://sunnyyuanz.github.io/meet-app/"
+                  >Live Site</a
+                >
+              </div>
+            </div>
+            <div class="swiper-slide grid__item">
+              <h2 class="grid_header">Sunnyside-agency-landing-page-main</h2>
+              <img
+                src="screenshot/desktop-preview.jpg"
+                alt="Sunnyside Lg-View"
+                class="work-desktopImg"
+              />
+              <img
+                src="screenshot/mobile-menu.jpg"
+                alt="Sunnyside Sm-View"
+                class="work-mobileImg"
+              />
+              <p class="grid_msg">
+                This well-designed landing page is most created with HTML and
+                CSS-grid. In addition, you will see a few interesting hovering
+                effect.
+              </p>
+              <div class="work-links">
+                <a
+                  target="_blank"
+                  href="https://github.com/sunnyyuanz/sunnyside-agency-landing-page-main"
+                  >See project on GitHub</a
+                ><a
+                  target="_blank"
+                  href="https://sunnyyuanz.github.io/sunnyside-agency-landing-page-main/"
+                  >Live Site</a
+                >
+              </div>
+            </div>
+
+            <div class="swiper-slide grid__item">
+              <h2 class="grid_header">FAQ-Accordian_Card</h2>
+              <img
+                src="screenshot/DesktopCapture.PNG"
+                alt="FAQ-Accordian_Card Lg-View"
+                class="work-desktopImg"
+              />
+              <img
+                src="screenshot/MobileCapture.PNG"
+                alt="FAQ-Accordian_Card Sm-View"
+                class="work-mobileImg"
+              />
+              <p class="grid_msg">
+                Within this project, I created FAQ-Accordian_Card component with
+                a gradiant background and shadow. After building the templates
+                with HTML,CSS,CSS-Flexbox and CSS-Grid. Also added the click
+                features with JavaScript.
+              </p>
+              <div class="work-links">
+                <a
+                  target="_blank"
+                  href="https://github.com/sunnyyuanz/FAQ-Accordian_Card"
+                  >See project on GitHub</a
+                ><a
+                  target="_blank"
+                  href="https://sunnyyuanz.github.io/FAQ-Accordian_Card/"
+                  >Live Site</a
+                >
+              </div>
+            </div>
+            <div class="swiper-slide grid__item">
+              <h2 class="grid_header">Blackjack Game</h2>
+              <p class="grid_msg">
+                Within this project, I created a Blackjack game. And it was
+                created with just HTML,CSS and vanilla JavaScript.
+              </p>
+              <div>
+                <a
+                  target="_blank"
+                  href="https://github.com/sunnyyuanz/Blackjack-js"
+                  >See project on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </section>
     </main>
     <footer>
-        <div>Find me on</div>
-        <div>
-            <a href="https://github.com/sunnyyuanz"><img src="image/github-icon.svg" alt="github"></a>
-            <a href="https://www.instagram.com/helenq80/?hl=en"><img src="image/instagram-icon.svg"
-                    alt="instagram-icon"></a>
-            <a href=""><img src="image/twitter-icon.svg" alt="twitter-icon"></a>
-
-        </div>
+      <div>Find me on</div>
+      <div>
+        <a href="https://github.com/sunnyyuanz"
+          ><img src="image/github-icon.svg" alt="github"
+        /></a>
+        <a href="https://www.instagram.com/helenq80/?hl=en"
+          ><img src="image/instagram-icon.svg" alt="instagram-icon"
+        /></a>
+        <a href=""><img src="image/twitter-icon.svg" alt="twitter-icon" /></a>
+      </div>
     </footer>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/site.js"></script>
     <script src="js/tota11y.min.js"></script>
-</body>
-
+  </body>
 </html>
